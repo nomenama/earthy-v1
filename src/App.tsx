@@ -6,6 +6,7 @@ import WhatWeDo from "./pages/WhatWeDo";
 import Media from "./pages/Media";
 import Contact from "./pages/Contact";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -37,6 +38,7 @@ function App() {
                     element={<Contact />}
                 />
             </Routes>
+            <Footer />
         </>
     );
 }

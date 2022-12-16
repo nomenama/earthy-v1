@@ -20,7 +20,7 @@ const Header = () => {
 
     return (
         <header className="w-full bg-white backdrop-blur-md shadow-md">
-            <nav className="max-w-[90%] 3xl:max-w-[80%] md:flex justify-between items-center mx-auto">
+            <nav className="max-w-[90%] 3xl:max-w-[80%] mx-auto md:flex justify-between items-center">
                 <a href="/">
                     <img
                         src="/logo/logo.jpg"
