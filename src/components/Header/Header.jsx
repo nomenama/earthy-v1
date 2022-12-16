@@ -18,45 +18,6 @@ const Header = () => {
     };
 
     return (
-        /*<header className="w-full bg-white backdrop-blur-md shadow-dark_04">
-            <div className="max-w-[90%] 3xl:max-w-[80%] flex justify-between items-center mx-auto">
-                <img
-                    src="/logo/logo.jpg"
-                    alt="logo"
-                    className="w-20 h-20 object-cover"
-                />
-
-                <div className="md:hidden">
-                    {isNavOpen ? (
-                        <MdOutlineClose
-                            onClick={toggleNavbar}
-                            fontSize={24}
-                            className="cursor-pointer text-primary"
-                        />
-                    ) : (
-                        <GiHamburgerMenu
-                            onClick={toggleNavbar}
-                            fontSize={24}
-                            className="cursor-pointer text-primary"
-                        />
-                    )}
-                </div>
-
-                <nav className="hidden md:flex justify-between items-center gap-4 mx-2">
-                    {NavigationLinks.map(({ name, link }, index) => (
-                        <a
-                            href={link}
-                            key={name + index}
-                            className="text-dark_03 hover:text-primary duration-100 font-medium">
-                            {name}
-                        </a>
-                    ))}
-
-                    <button className="button-navbar font-medium">Donate</button>
-                </nav>
-            </div>
-        </header>*/
-
         <header className="w-full bg-white backdrop-blur-md shadow-md fixed top-0 left-0">
             <nav className="max-w-[90%] 3xl:max-w-[80%] md:flex justify-between items-center mx-auto">
                 <a href="/">
