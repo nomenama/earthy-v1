@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const Links = [
         { name: "Home", link: "/" },
-        { name: "About Us", link: "/" },
-        { name: "What We Do", link: "/" },
-        { name: "Media", link: "/" },
-        { name: "Contact", link: "/" },
+        { name: "About Us", link: "/about-us" },
+        { name: "What We Do", link: "/what-we-do" },
+        { name: "Media", link: "/media" },
+        { name: "Contact", link: "/contact" },
     ];
 
     const toggleNavbar = () => {
@@ -45,21 +46,23 @@ const Header = () => {
                 </div>
 
                 <ul
-                    className={`md:flex md:items-center justify-center absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in 
+                    className={`md:flex md:items-center justify-center absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-300 ease-in 
                     ${isNavOpen ? "top-20 opacity-100" : "top-[-200px] md:opacity-100 opacity-0"}`}>
                     {Links.map(({ name, link }, index) => (
                         <li
                             key={link.name}
-                            className="md:px-5 md:py-0 py-2">
-                            <a
-                                href={link}
+                            className="md:px-5 md:py-0 py-2 text-center">
+                            <Link
+                                to={link}
                                 key={name + index}
                                 className="text-dark_03 hover:text-primary duration-100 font-medium">
                                 {name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
-                    <button className="button-navbar font-medium">Donate</button>
+                    <div className="md:w-auto w-full flex justify-center items-center">
+                        <button className="button-navbar font-medium md:mb-0 mb-5">Donate</button>
+                    </div>
                 </ul>
             </nav>
         </header>
