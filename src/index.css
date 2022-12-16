@@ -16,6 +16,7 @@
     color: #ffffff;
     cursor: pointer;
     border-radius: 4px;
+    padding: 5px 10px;
   }
 
   .button-secondary {
@@ -23,6 +24,7 @@
     color: #1d2130;
     cursor: pointer;
     border-radius: 4px;
+    padding: 5px 10px;
   }
 
   .button-navbar {
@@ -30,6 +32,7 @@
     color: #ffffff;
     cursor: pointer;
     border-radius: 4px;
+    padding: 5px 20px;
   }
 }
 
