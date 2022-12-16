@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Let's save the planet Earth
 
 ## Pre-requisites
 Figma design - https://www.figma.com/community/file/1036420344519462418
