@@ -59,11 +59,13 @@ const Header = () => {
 
         <header className="w-full bg-white backdrop-blur-md shadow-md fixed top-0 left-0">
             <nav className="max-w-[90%] 3xl:max-w-[80%] md:flex justify-between items-center mx-auto">
-                <img
-                    src="/logo/logo.jpg"
-                    alt="logo"
-                    className="w-20 h-20 object-cover"
-                />
+                <a href="/">
+                    <img
+                        src="/logo/logo.jpg"
+                        alt="logo"
+                        className="w-20 h-20 object-cover"
+                    />
+                </a>
 
                 <div className="md:hidden absolute right-8 top-7">
                     {isNavOpen ? (
