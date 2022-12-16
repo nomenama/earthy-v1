@@ -5,35 +5,39 @@ import About from "./pages/About";
 import WhatWeDo from "./pages/WhatWeDo";
 import Media from "./pages/Media";
 import Contact from "./pages/Contact";
+import Header from "./components/Header/Header";
 
 function App() {
     return (
-        <Routes>
-            <Route
-                path="/"
-                element={<Home />}
-            />
+        <>
+            <Header />
+            <Routes>
+                <Route
+                    path="/"
+                    element={<Home />}
+                />
 
-            <Route
-                path="/about-us"
-                element={<About />}
-            />
+                <Route
+                    path="/about-us"
+                    element={<About />}
+                />
 
-            <Route
-                path="/what-we-do"
-                element={<WhatWeDo />}
-            />
+                <Route
+                    path="/what-we-do"
+                    element={<WhatWeDo />}
+                />
 
-            <Route
-                path="/media"
-                element={<Media />}
-            />
+                <Route
+                    path="/media"
+                    element={<Media />}
+                />
 
-            <Route
-                path="/contact"
-                element={<Contact />}
-            />
-        </Routes>
+                <Route
+                    path="/contact"
+                    element={<Contact />}
+                />
+            </Routes>
+        </>
     );
 }
 

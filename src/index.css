@@ -40,7 +40,12 @@
   .button-navbar:hover {
     background-color: #ffffff;
     color: #1d2130;
+  }
 
+  .banner {
+    background-image: url("./assets/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

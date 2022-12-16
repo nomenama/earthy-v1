@@ -19,7 +19,7 @@ const Header = () => {
     };
 
     return (
-        <header className="w-full bg-white backdrop-blur-md shadow-md fixed top-0 left-0">
+        <header className="w-full bg-white backdrop-blur-md shadow-md">
             <nav className="max-w-[90%] 3xl:max-w-[80%] md:flex justify-between items-center mx-auto">
                 <a href="/">
                     <img
