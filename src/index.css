@@ -4,6 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: Roboto, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .button-primary {
+    background-color: #70c174;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .button-secondary {
+    background-color: #ffffff;
+    color: #1d2130;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .button-navbar {
+    background-color: #1d2130;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
