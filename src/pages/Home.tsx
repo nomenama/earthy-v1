@@ -1,9 +1,36 @@
 import React from "react";
-import { MdPlayCircleOutline } from "react-icons/md";
+import { MdPlayCircleOutline, MdWaves } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Title from "../components/Title/Title";
+import Mission, { MissionProps } from "../components/MissionList/Mission";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import { TbPlant } from "react-icons/tb";
+import { FaDog } from "react-icons/fa";
 
 const Home = () => {
+    const missionList: MissionProps[] = [
+        {
+            icon: <HiOutlineBuildingOffice2 />,
+            heading: "Build Healthy Cities",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        },
+        {
+            icon: <TbPlant />,
+            heading: "Tree Plantation",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        },
+        {
+            icon: <MdWaves />,
+            heading: "Protect Land and Water",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        },
+        {
+            icon: <FaDog />,
+            heading: "Animal Safety",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        },
+    ];
+
     return (
         <main>
             <section className="w-full h-[730px] banner">
@@ -38,7 +65,7 @@ const Home = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start gap-[50px]">
                     <div className="w-full md:max-w-[55%] pt-10 flex flex-col items-start justify-between gap-10">
                         <Title title="Know about us" />
-                        <h2 className="text-dark_02 text-heading_02 leading-10 font-bold pl-[92px]">
+                        <h2 className="text-dark_02 text-heading_02 leading-[50px] font-bold pl-[92px]">
                             We help nature smile and survive everywhere
                         </h2>
 
@@ -99,6 +126,46 @@ const Home = () => {
                         <img
                             src="/sponsors/logo-6.png"
                             alt="sponsor"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className="w-full bg-green_01 py-[50px]">
+                <div className="container flex flex-col mf:flex-row justify-between items-start gap-[50px]">
+                    <div className="w-full mf:max-w-[55%] pt-10 flex flex-col items-start justify-between gap-10">
+                        <Title title="what we do" />
+
+                        <h2 className="text-dark_02 text-heading_02 leading-[50px] font-bold pl-[92px]">
+                            We care for earth, care for the coming birth
+                        </h2>
+
+                        <p className="text-dark_03 pl-[92px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique.
+                        </p>
+
+                        <div className="flex gap-6 pl-[92px]">
+                            <div className="flex-1 min-w-[1px] bg-dark_05 z-10" />
+
+                            <div className="flex flex-col gap-[30px]">
+                                {missionList.map(({ icon, heading, text }, index) => (
+                                    <Mission
+                                        key={heading + index}
+                                        icon={icon}
+                                        heading={heading}
+                                        text={text}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="w-fit md:max-w-[45%]">
+                        <img
+                            src="/image-1.png"
+                            alt="man playing with dog"
+                            className="object-cover w-full h-full"
                         />
                     </div>
                 </div>

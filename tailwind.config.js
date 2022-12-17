@@ -3,6 +3,9 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     theme: {
         extend: {
+            screens: {
+                mf: "990px",
+            },
             colors: {
                 primary: "#70c174",
                 secondary: "#bef3c0",
@@ -20,6 +23,8 @@ module.exports = {
                 dark_03: "#525560",
                 dark_04: "#ebf0f9",
                 dark_05: "#e5e5e5",
+                green_01: "#eff7f2",
+                green_02: "#83D187",
             },
             fontFamily: {
                 Roboto: ["Roboto", "sans-serif"],
