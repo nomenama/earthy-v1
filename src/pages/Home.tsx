@@ -199,6 +199,55 @@ const Home = () => {
                     />
                 </div>
             </section>
+
+            <section className="w-full bg-dark_01">
+                <div className="container flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-10 py-[50px]">
+                    <div className="w-full md:max-w-[60%] flex flex-col gap-10">
+                        <h2 className="text-white text-heading_03 leading-[50px] md:text-heading_02">
+                            How we spend your donations and where it goes
+                        </h2>
+
+                        <p className="text-dark_04 ">
+                            We understand that when you make a donation, you want to know exactly
+                            where your money is going and we pledge to be transparent.
+                        </p>
+
+                        <div className="flex flex-wrap justify-start items-center gap-8">
+                            <div className="flex flex-nowrap justify-start items-center gap-3">
+                                <div className="w-[16px] h-[16px] bg-green-200 rounded-sm" />
+                                <p className="text-white">40% planting trees</p>
+                            </div>
+
+                            <div className="flex flex-nowrap justify-start items-center gap-3">
+                                <div className="w-[16px] h-[16px] bg-purple-300 rounded-sm" />
+                                <p className="text-white">35% cleanliness program</p>
+                            </div>
+
+                            <div className="flex flex-nowrap justify-start items-center gap-3">
+                                <div className="w-[16px] h-[16px] bg-yellow-100 rounded-sm" />
+                                <p className="text-white">10% helping people</p>
+                            </div>
+
+                            <div className="flex flex-nowrap justify-start items-center gap-3">
+                                <div className="w-[16px] h-[16px] bg-orange-300 rounded-sm" />
+                                <p className="text-white">10% animal safety</p>
+                            </div>
+
+                            <div className="flex flex-nowrap justify-start items-center gap-3">
+                                <div className="w-[16px] h-[16px] bg-pink-300 rounded-sm" />
+                                <p className="text-white">5% feeding the poor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img
+                            src="/chart.png"
+                            alt="chart"
+                        />
+                    </div>
+                </div>
+            </section>
         </main>
     );
 };
