@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { Links } from "../../types";
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const Links = [
+    const links: Links[] = [
         { name: "Home", link: "/" },
         { name: "About Us", link: "/about-us" },
         { name: "What We Do", link: "/what-we-do" },
@@ -48,9 +49,9 @@ const Header = () => {
                 <ul
                     className={`md:flex md:items-center justify-center absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-300 ease-in 
                     ${isNavOpen ? "top-20 opacity-100" : "top-[-200px] md:opacity-100 opacity-0"}`}>
-                    {Links.map(({ name, link }, index) => (
+                    {links.map(({ name, link }, index) => (
                         <li
-                            key={link.name}
+                            key={name}
                             className="md:px-5 md:py-0 py-2 text-center">
                             <Link
                                 to={link}
