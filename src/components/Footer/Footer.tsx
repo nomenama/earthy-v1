@@ -77,7 +77,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex-1 flex flex-col justify-start items-start gap-10">
+                <div className="flex-1 flex flex-col justify-start items-start pl-[30px] md:pl-0 gap-10">
                     <h1 className="text-white lg:text-4xl text-2xl">
                         Subscribe to get latest <br /> updates
                     </h1>
