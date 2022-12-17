@@ -248,6 +248,25 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="w-full bg-white py-[50px]">
+                <div className="container w-full h-[384px] bg-wind-turbine bg-repeat bg-cover bg-center bg-gray-400 bg-blend-multiply py-[50px] rounded-md relative">
+                    <div className="max-w-2xl flex flex-col gap-[20px] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+                        <h2 className="text-white text-center xl:leading-[60px] text-heading_03 lg:text-heading_02 font-bold">
+                            You can contribute to make the environment greener!
+                        </h2>
+
+                        <div className="flex justify-center gap-8">
+                            <button className="button-primary text-heading_05 md:text-[1rem]">
+                                Join as a volunteer
+                            </button>
+                            <button className="button-secondary text-heading_05 md:text-[1rem] px-10">
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 };

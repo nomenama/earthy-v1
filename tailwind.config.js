@@ -46,6 +46,7 @@ module.exports = {
                 forest: "url('./assets/forest.jpg')",
                 city: "url('./assets/city.jpg')",
                 "wild-life": "url('./assets/wild-life.jpg')",
+                "wind-turbine": "url('./assets/wind-turbine.jpg')",
             },
         },
     },
