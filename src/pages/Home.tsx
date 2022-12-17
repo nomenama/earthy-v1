@@ -6,6 +6,7 @@ import Mission, { MissionProps } from "../components/MissionList/Mission";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { TbPlant } from "react-icons/tb";
 import { FaDog } from "react-icons/fa";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 
 const Home = () => {
     const missionList: MissionProps[] = [
@@ -168,6 +169,34 @@ const Home = () => {
                             className="object-cover w-full h-full"
                         />
                     </div>
+                </div>
+            </section>
+
+            <section className="container bg-white py-[50px] flex flex-col gap-[20px]">
+                <Title title="projects we have done" />
+
+                <h2 className="w-full md:max-w-[50%] text-dark_02 text-heading_02 leading-[50px] font-bold pl-[92px]">
+                    We are creating sustainable society, for everyone and forever.
+                </h2>
+
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-9">
+                    <ProjectCard
+                        backGroundImg="bg-forest"
+                        heading="Mission 40K: Tree plantation"
+                        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit itaque modi numquam omnis quasi quisquam?"
+                    />
+
+                    <ProjectCard
+                        backGroundImg="bg-city"
+                        heading="Weekly cleanliness program in city"
+                        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit itaque modi numquam omnis quasi quisquam?"
+                    />
+
+                    <ProjectCard
+                        backGroundImg="bg-wild-life"
+                        heading="Wildlife safety program 2023"
+                        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit itaque modi numquam omnis quasi quisquam?"
+                    />
                 </div>
             </section>
         </main>

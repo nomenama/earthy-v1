@@ -42,6 +42,11 @@ module.exports = {
                 "1/3": "33.33333%",
                 "2/3": "66.66667%",
             },
+            backgroundImage: {
+                forest: "url('./assets/forest.jpg')",
+                city: "url('./assets/city.jpg')",
+                "wild-life": "url('./assets/wild-life.jpg')",
+            },
         },
     },
     plugins: [],
