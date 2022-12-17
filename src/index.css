@@ -16,7 +16,7 @@
     color: #ffffff;
     cursor: pointer;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 10px 20px;
   }
 
   .button-secondary {
@@ -46,6 +46,11 @@
     background-image: url("./assets/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
