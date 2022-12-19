@@ -7,6 +7,9 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { TbPlant } from "react-icons/tb";
 import { FaDog } from "react-icons/fa";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
+import SecondaryTitle from "../components/SecondaryTitle/SecondaryTitle";
+import NewsCard from "../components/News/NewsCard";
+import EventCard from "../components/EventCard/EventCard";
 
 const Home = () => {
     const missionList: MissionProps[] = [
@@ -265,6 +268,53 @@ const Home = () => {
                             </button>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="container bg-white py-[50px] flex flex-col gap-[20px]">
+                <SecondaryTitle heading="Read Our News" />
+
+                <div className="flex flex-wrap justify-center md:justify-between items-start gap-8">
+                    <NewsCard
+                        imgSrc="/thumbnails/thumbnail-1.png"
+                        title="Don’t destroy greenery and don’t spoil scenery"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+                    />
+                    <NewsCard
+                        imgSrc="/thumbnails/thumbnail-2.png"
+                        title=" Is climate change happening faster than expected?"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+                    />
+                    <NewsCard
+                        imgSrc="/thumbnails/thumbnail-3.png"
+                        title="Top 10 facts about wind farms you didn't know"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+                    />
+                    <NewsCard
+                        imgSrc="/thumbnails/thumbnail-4.png"
+                        title="Our goal is to make water available for everyone"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+                    />
+                </div>
+            </section>
+
+            <section className="container bg-white py-[50px] flex flex-col gap-[20px]">
+                <SecondaryTitle heading="Our Events" />
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <EventCard
+                        date={23}
+                        month="Sep"
+                        title="Say no to plastic usage and save the planet"
+                        onClick={() => {}}
+                    />
+
+                    <EventCard
+                        date={25}
+                        month="Sep"
+                        title="Weekly cleaning program"
+                        onClick={() => {}}
+                    />
                 </div>
             </section>
         </main>
