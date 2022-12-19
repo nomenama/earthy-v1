@@ -28,12 +28,12 @@ const EventCard = ({ date, month, title, onClick }: EventCardProps) => {
                 <h4>{month}</h4>
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-3">
                 <div className="text-sm md:text-[1rem] flex justify-start items-center gap-[20px]">
-                    <p className="uppercase text-dark_02">Next Events</p>
+                    <p className="uppercase text-dark_02 font-medium">Next Events</p>
                     <div className="h-[2px] w-[44px] bg-dark_02" />
                 </div>
-                <h3 className="text-heading_04 lg:text-heading_03 text-dark_02 font-bold">
+                <h3 className="max-w-[400px] text-heading_04 lg:text-heading_03 text-dark_02 font-bold">
                     {title}
                 </h3>
             </div>

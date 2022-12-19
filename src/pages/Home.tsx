@@ -45,11 +45,11 @@ const Home = () => {
                         </h1>
 
                         <div className="flex gap-3">
-                            <Link
-                                to={"/what-we-do"}
+                            <a
+                                href={"#what-we-do"}
                                 className="button-secondary">
                                 What we do
-                            </Link>
+                            </a>
                             <button className="px-2 flex text-white justify-start items-center gap-2">
                                 <MdPlayCircleOutline />
                                 Play Video
@@ -135,7 +135,9 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="w-full bg-green_01 py-[50px]">
+            <section
+                className="w-full bg-green_01 py-[50px]"
+                id="what-we-do">
                 <div className="container flex flex-col mf:flex-row justify-between items-start gap-[50px]">
                     <div className="w-full mf:max-w-[55%] pt-10 flex flex-col items-start justify-between gap-10">
                         <Title title="what we do" />
