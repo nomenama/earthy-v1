@@ -4,7 +4,7 @@ import Title from "../components/Title/Title";
 const About = () => {
     return (
         <main>
-            <div className="w-full max-w-full custom-gradient">
+            <div className="w-full custom-gradient">
                 <section className="container bg-transparent py-[50px] flex flex-col gap-[50px]">
                     <Title title="Know About Us" />
 
@@ -109,6 +109,68 @@ const About = () => {
                     </div>
                 </section>
             </div>
+
+            <section className="container bg-white py-[50px] flex flex-col gap-[50px]">
+                <h1 className="text-heading_01 text-dark_02 font-bold flex justify-center">
+                    {" "}
+                    Awards & Recognitions
+                </h1>
+
+                <div className="flex flex-row flex-wrap justify-between gap-10 mx-10">
+                    <img
+                        src="/awards/award1.png"
+                        alt="Best NGO Award"
+                    />
+                    <img
+                        src="/awards/award2.png"
+                        alt="Global Award"
+                    />
+                    <img
+                        src="/awards/award3.png"
+                        alt="Foresto Award"
+                    />
+                    <img
+                        src="/awards/award4.png"
+                        alt="Earth Saver Award"
+                    />
+                </div>
+
+                <div className="bg-dark_01 rounded-lg py-14 flex justify-end gap-10">
+                    <div className="flex flex-col justify-center gap-4 ml-10">
+                        <h3 className="text-white uppercase leading-4 tracking-widest">
+                            Our Journey
+                        </h3>
+                        <h1 className="text-heading_01 font-bold text-white">How we raised 34M</h1>
+                        <p className="text-white opacity-60 leading-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+                            ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                            Aenean faucibus nibh.
+                        </p>
+                        <div className="flex flex-row justify-start gap-5">
+                            <div className="flex-col gap-3">
+                                <h3 className="text-white text-2xl">34M+</h3>
+                                <p className="text-white text-xs opacity-60">Donation Received</p>
+                            </div>
+
+                            <div className="flex-col gap-3">
+                                <h3 className="text-white text-2xl">400+</h3>
+                                <p className="text-white text-xs opacity-60">Volunteers</p>
+                            </div>
+
+                            <div className="flex-col gap-3">
+                                <h3 className="text-white text-2xl">40K+</h3>
+                                <p className="text-white text-xs opacity-60">Trees planted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img
+                        src="/image-2.png"
+                        alt="our team"
+                    />
+                </div>
+            </section>
         </main>
     );
 };
