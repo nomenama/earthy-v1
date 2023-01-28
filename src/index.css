@@ -55,7 +55,7 @@
   }
 
   .custom-gradient {
-    background: linear-gradient(180deg, #ffffff 35%, #EFF7F2 65%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 45%, #EFF7F2 45%, #EFF7F2 100%);
   }
 }
 
