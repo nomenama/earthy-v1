@@ -53,6 +53,10 @@
     max-width: 90%;
     margin: 0 auto;
   }
+
+  .custom-gradient {
+    background: linear-gradient(180deg, #ffffff 35%, #EFF7F2 65%);
+  }
 }
 
 code {

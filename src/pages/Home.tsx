@@ -1,6 +1,5 @@
 import React from "react";
 import { MdPlayCircleOutline, MdWaves } from "react-icons/md";
-import { Link } from "react-router-dom";
 import Title from "../components/Title/Title";
 import Mission, { MissionProps } from "../components/MissionList/Mission";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
